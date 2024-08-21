@@ -20,7 +20,7 @@ var medium = document.querySelector(".difficulty__medium");
 var easy = document.querySelector(".difficulty__easy");
 var soundOn = document.querySelector(".sound__on");
 var soundOff = document.querySelector(".sound__off");
-var bite = new Audio("../sounds/apple_bite.mp3")
+var bite = new Audio("./sounds/apple_bite.mp3");
 
 // Start Game
 document.addEventListener("keydown", function(event){
@@ -28,7 +28,7 @@ document.addEventListener("keydown", function(event){
         startGame();
         document.querySelector(".start__message").innerHTML = "Press 'R' to restart";
     }
-})  
+});  
 
 function startGame() {
     initializeFood(); 
