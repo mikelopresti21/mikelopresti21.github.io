@@ -1,0 +1,103 @@
+.hero {
+    color: #fff;
+    text-align: center;
+    padding: 3rem 0;
+    position: relative;
+}
+
+.hero__headshot {
+    margin: 0 auto;
+    width: 150px;
+    border-radius: 1000px;
+    margin-bottom: .5rem;
+    animation: float 1s ease 0s infinite alternate none;
+    animation-play-state: running;
+    border: 2px solid #fff;
+}
+
+.hero__title {
+    font-size: 5rem;
+    letter-spacing: -0.05rem;
+}
+
+.hero__description {
+    max-width: 55ch;
+    margin-inline: auto;
+    font-size: 1.8rem;
+    margin-bottom: .8rem;
+}
+
+.hero__name {
+    font-weight: 200;
+    line-height: 0;
+    font-size: 2rem;
+    letter-spacing: -0.05rem;
+}
+
+.hero__attention {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #ccc;
+}
+
+@keyframes float {
+    from{
+        transform: translateY(0);
+    }
+
+    to{
+        transform: translateY(-3px);
+    }
+}
+
+/* 2xl */
+@media (max-width: 1440px) {}
+/* xl */
+@media (max-width: 1024px) {}
+/* md */
+@media (max-width: 768px) {
+    .hero__title {
+        font-size: 2.8rem;
+    }
+
+    .hero__description{
+        font-size: 1.2rem;
+    }
+
+    .hero__attention{
+        font-size: 1rem;
+    }
+
+    .hero__name{
+        font-size: 1.rem;
+    }
+}
+/* sm */
+@media (max-width: 640px) {
+    .hero__title {
+        font-size: 2.5rem;
+    }
+}
+/* xs */
+@media (max-width: 425px) {
+    .hero__name {
+        font-weight: 200;
+        line-height: .5;
+        font-size: 1.5rem;
+        letter-spacing: -0.05rem;
+    }
+    .hero__title {
+        font-size: 2rem;
+    }
+    .hero__description {
+        max-width: 55ch;
+        margin-inline: auto;
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+    .hero__attention {
+        font-size: .8rem;
+        font-weight: 300;
+        color: #ccc;
+    }
+}

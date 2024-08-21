@@ -1,0 +1,126 @@
+.education {
+    padding: 2rem 0;
+}
+
+.education__title {
+    font-size: 3rem;
+    letter-spacing: -0.025rem;
+    margin-bottom: .25rem;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+}
+
+.education__description {
+    max-width: 65ch;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.school__container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.schoolbox {
+    flex: 1;
+    padding: 1rem;
+    background-color: #004a58;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.school__name {
+    font-size: 1.4rem;
+}
+
+.school__img__B {
+    background-image: url(/images/PMS187_Black.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 175px;
+    margin-bottom: 1rem;
+}
+
+.school__img__R {
+    background-image: url(/images/RUTGERS_H_RED_RGB.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 175px;
+    margin-bottom: 1rem;
+}
+
+.school__description {
+    font-size: 1.2rem;
+    max-width: 40ch;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.school__gpa {
+    font-size: 1.2rem;
+}
+
+/* 2xl */
+@media (max-width: 1440px) {}
+/* xl */
+@media (max-width: 1024px) {}
+/* md */
+@media (max-width: 768px) {
+   .education__title{
+        font-size: 2rem;
+   }
+
+   .education__description{
+        font-size: 1.2rem;
+   }
+
+   .school__img__B{
+        height: 40px;
+        width: 150px;
+   }
+
+   .school__img__R{
+        height: 40px;
+        width: 150px;
+   }
+
+   .school__name{
+        font-size: 1.2rem;
+   }
+
+   .school__description{
+        font-size: 1rem;
+   }
+
+   .school__gpa{
+        font-size: 1rem;
+   }
+}
+/* sm */
+@media (max-width: 640px) {}
+/* xs */
+@media (max-width: 425px) {
+    .education__title{
+        font-size: 1.5rem;
+   }
+
+   .education__description{
+        font-size: 1rem;
+   }
+}

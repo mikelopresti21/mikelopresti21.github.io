@@ -1,0 +1,187 @@
+.container {
+    width: 100%;
+    padding-inline: 1.25rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.start__message {
+    font-family: "Orbitron", sans-serif;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    word-spacing: .5rem;
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.score {
+    letter-spacing: 0.05rem;
+    font-size: 2.5rem;
+    margin-inline: auto;
+    font-family: inherit;
+}
+
+.scoreboard{
+    color: #fff;
+    width: 300px;
+    background-color: #000;
+    font-family: "Orbitron", sans-serif;
+    border-radius: 100px;
+    margin-inline: auto;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    padding: .5rem;
+    text-align: center;
+    text-shadow: 0px 0px 10px #fff;
+}
+
+.highscore {
+    font-size: 1.2rem;
+    margin-bottom: .25rem;
+    font-family: inherit;
+}
+
+.control__panel {
+    margin-top: 1rem;
+    width: 600px;
+    background-color: #888888;
+    height: 50px;
+    margin-inline: auto;
+    border-radius: 1000px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #ccc;
+    gap: 1rem;
+}
+
+.difficulty {
+    display: flex;
+    gap: 1rem;
+}
+
+.difficulty__switch {
+    cursor: pointer;
+}
+
+.active-difficulty {
+    color: #fffd91;
+    font-weight: 400;
+    text-shadow: 0px 0px 8px #fff;
+}
+
+.sound-active {
+    position: absolute;
+    left: 15px;
+    justify-self: start;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    align-self: center;
+}
+
+@media (max-width: 1536px) {
+}
+/* xl */
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1000px) {
+    .scoreboard{
+        width: 225px;
+    }
+    .score {
+        font-size: 2rem;
+    }
+    .highscore {
+        font-size: 1rem;
+    }
+    .start__message {
+        font-size: 1.8rem;
+    }
+    .control__panel {
+        width: 400px;
+        font-size: 1rem;
+    }
+    .sound-active {
+        height: 20px;
+        width: 20px;
+    }
+}
+/* md */
+@media (max-width: 850px) {
+}
+/* sm */
+@media (max-width: 750px) {
+}
+/* xs */
+@media (max-width: 650px) {
+    .score {
+        font-size: 1.6rem;
+    }
+
+    .scoreboard {
+        width: 200px;
+        margin-top: 4rem;
+    }
+
+    .start__message {
+        font-size: 1.6rem;
+    }
+
+    .control__panel {
+        width: 325px;
+        font-size: .8rem;
+    }
+
+    .sound-active {
+        height: 18px;
+        width: 18px;
+    }
+
+    .difficulty {
+        gap: .5rem;
+    }
+
+    .diff {
+        margin-left: .5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .scoreboard {
+        margin-top: 3.5rem;
+    }
+
+    .start__message {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .scoreboard {
+        margin-top: 3rem;
+    }
+
+    .start__message {
+        font-size: 1rem;
+    }
+
+    .control__panel {
+        width: 275px;
+    }
+
+    .diff {
+        visibility: hidden;
+        position: absolute;
+    }
+}

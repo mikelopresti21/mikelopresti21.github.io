@@ -1,0 +1,29 @@
+.games {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: start;
+    height: 100vh;
+    width: 75%;
+    margin-inline: auto;
+    gap: 2rem;
+}
+
+.games__game {
+    position: relative;
+}
+ 
+.games__game-title {
+    text-align: center;
+    border: 2px solid #fff;  
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #fff;
+    color: #002A32;
+    font-size: 1.2rem;
+}
+
+.games__game-img {
+    border: 2px solid #fff;
+    width: 300px;
+    height: 300px;
+}

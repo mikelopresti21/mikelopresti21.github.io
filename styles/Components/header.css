@@ -1,0 +1,44 @@
+.header {
+    background-color: #002A32;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header__menu {
+    flex: 1;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.header__link:hover {
+    color: #ccc;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {}
+/* xl */
+@media (max-width: 1280px) {}
+/* md */
+@media (max-width: 768px) {}
+/* sm */
+@media (max-width: 640px) {}
+/* xs */
+@media (max-width: 475px) {
+    .header__menu {
+        gap: .8rem;
+    }
+    .header__link {
+        font-size: .9rem;
+    }
+}

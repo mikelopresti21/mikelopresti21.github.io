@@ -1,0 +1,165 @@
+.simon {
+    padding-bottom: 5rem;
+}
+
+.simon__container {
+    display: grid;
+    margin-inline: auto;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto-fit;
+    grid-auto-flow: row;
+    gap: 2rem;
+    padding: 1.5rem;
+    background-color: #000;
+    border-radius: 50px;
+    border: 5px outset #ccc;
+    width: 80%;
+}
+
+
+.game__btn {
+    height: 300px;
+    width: 100%;
+    border: 5px outset #888888;
+    border-radius: 50px;
+    opacity: 50%;
+    background-color: #fff;
+}
+
+.game__btn-red {
+    background-color: red;
+}
+
+.game__btn-blue {
+    background-color: blue;
+}
+
+.game__btn-yellow {
+    background-color: yellow;
+}
+
+.game__btn-green {
+    background-color: green;
+}
+
+.left-btn {
+    margin-left: auto;
+}
+
+.right-btn {
+    margin-right: auto;
+}
+
+.pressed {
+    opacity: 100%;
+}
+
+.background-flash{
+    background-color: rgb(228, 68, 68);
+}
+
+.btn-add-remove {
+    display: flex;
+    gap: .8rem;
+    color: #fff;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.btn-symbol {
+    height: 25px;
+    width: 25px;
+    background-color: blue;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    align-self: center;
+}
+
+.add-btn {
+    cursor: pointer;
+}
+
+.remove-btn {
+    cursor: pointer;
+}
+
+@media (max-width: 1536px) {
+    .game__btn {
+        height: 250px;
+    }
+}
+/* xl */
+@media (max-width: 1280px) {
+    .simon__container {
+        gap: 1.5rem;
+    }
+    .game__btn {
+        height: 200px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .simon__container {
+        gap: 1rem;
+    }
+    .game__btn {
+        height: 175px;
+    }
+    .btn-add-remove {
+        gap: .5rem;
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+
+    .btn-symbol {
+        height: 22px;
+        width: 22px;
+    }
+}
+/* md */
+@media (max-width: 850px) {
+    .game__btn {
+        height: 150px;
+        border-radius: 40px;
+    }
+}
+/* sm */
+@media (max-width: 750px) {
+    .game__btn {
+        border-radius: 30px;
+    }
+}
+/* xs */
+@media (max-width: 650px) {
+    .simon__container {
+        gap: .5rem;
+        width: 90%;
+    }
+    .game__btn {
+        height: 100px;
+        border-radius: 20px;
+    }
+    .btn-add-remove {
+        gap: .5rem;
+        margin-left: 0;
+        font-size: 1rem;
+    }
+    .btn-symbol {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .game__btn {
+        height: 75px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .game__btn {
+        height: 75px;
+        border-radius: 10px;
+    }
+}

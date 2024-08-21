@@ -1,0 +1,97 @@
+.snake__container {
+    display: flex;
+    justify-content: center;
+}
+
+.snake__map {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    background-color: #fff;
+}
+
+.snake__cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.snake__food {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    animation: glow 2s linear 0s infinite alternate none;
+    animation-play-state: running;
+}
+
+.snake__body {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+}
+
+@keyframes glow {
+    0% {
+        background-color: rgb(255, 0, 0);
+    }
+
+    100% {
+        background-color: rgb(255, 57, 166);
+    }
+}
+
+@media (max-width: 1536px) {
+}
+/* xl */
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1000px) {
+
+}
+/* md */
+@media (max-width: 850px) {
+    .snake__map {
+        grid-template-columns: repeat(10, 40px);
+        grid-template-rows: repeat(10, 40px);
+    }
+    .snake__cell {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #000;
+    }
+    .snake__food {
+        width: 32px;
+        height: 32px;
+    }
+}
+/* sm */
+@media (max-width: 750px) {
+}
+/* xs */
+@media (max-width: 650px) {
+    .snake__map {
+        grid-template-columns: repeat(10, 30px);
+        grid-template-rows: repeat(10, 30px);
+    }
+    .snake__cell {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #000;
+    }
+    .snake__food {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 550px) {
+
+}
+
+@media (max-width: 425px) {
+
+}
