@@ -17,21 +17,26 @@
 }
 
 .ti_projects {
-    background-color: #004a58;
     width: 80%;
     margin-inline: auto;
-    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px, 200px;
+    gap: 1rem;
 }
 
 .ti_project {
     display: flex;
+    background-color: #004a58;
+    border-radius: 10px;
 }
 
 .ti_project-img {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    align-self: center;
 }
 
 .ti_project-content {
@@ -40,6 +45,11 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+    justify-content: space-between;
+}
+
+.ti_project-text-container {
+    margin-bottom: .8rem;
 }
 
 .ti_project-title {
@@ -49,26 +59,20 @@
 }
 
 .ti_project-description {
-    margin-bottom: .5rem;
+    
 }
 
 .ti_project-btn {
     font-size: 1rem;
     background-color: #fff;
     color: #002A32;
-    border-radius: 100px;
+    border-radius: 10px;
     border: none;
     padding: .4rem .8rem;
     cursor: pointer;
-    transition: transform 0.3s;
-    position: relative;
 }
 
 .ti_project-btns {
     display: flex;
     gap: 1rem;
-    justify-content: center;
-    position: absolute;
-    bottom: 10px;
-    align-self: center;
 }

@@ -16,7 +16,6 @@
 }
 
 .skillbox {
-    flex: 1;
     border: 2px solid white;
     border-radius: 10px;
     text-align: left;
@@ -28,15 +27,15 @@
 
 .skill__icon {
     display: block;
-    width: 75px;
+    height: 50px;
+    /* width: 75px; */
     margin-bottom: 1rem;
     margin-inline: auto;
 }
 
 .skill__blurb {
-    max-width: 30ch;
+    max-width: 35ch;
     font-weight: 300;
-    text-align: center;
     margin-inline: auto;
 }
 
