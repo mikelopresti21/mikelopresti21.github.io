@@ -46,7 +46,7 @@
 }
 
 .school__img__B {
-    background-image: url(../images/PMS187_Black.png);
+    background-image: url(../../images/PMS187_Black.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -56,7 +56,7 @@
 }
 
 .school__img__R {
-    background-image: url(../images/RUTGERS_H_RED_RGB.png);
+    background-image: url(../../images/RUTGERS_H_RED_RGB.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
