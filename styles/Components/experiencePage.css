@@ -1,0 +1,74 @@
+.ti {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ti_title {
+    text-align: center;
+    color: white;
+}
+
+.ti_description {
+    width: 75ch;
+    color: white;
+    margin-inline: auto;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.ti_projects {
+    background-color: #004a58;
+    width: 80%;
+    margin-inline: auto;
+    border-radius: 10px;
+}
+
+.ti_project {
+    display: flex;
+}
+
+.ti_project-img {
+    height: 200px;
+    width: 200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.ti_project-content {
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.ti_project-title {
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: 1.4rem;
+}
+
+.ti_project-description {
+    margin-bottom: .5rem;
+}
+
+.ti_project-btn {
+    font-size: 1rem;
+    background-color: #fff;
+    color: #002A32;
+    border-radius: 100px;
+    border: none;
+    padding: .4rem .8rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.ti_project-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    align-self: center;
+}
