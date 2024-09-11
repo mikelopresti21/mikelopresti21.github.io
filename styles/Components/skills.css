@@ -23,6 +23,7 @@
     min-width: 400px;
     max-width: 400px;
     transition: transform 0.3s;
+    flex: 1;
 }
 
 .skill__icon {
