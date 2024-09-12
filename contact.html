@@ -7,6 +7,7 @@
 <!-- style sheets -->
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/Components/header.css">
+    <link rel="stylesheet" href="styles/Components/contact.css">
     <link rel="stylesheet" href="styles/Components/hero.css">
     <link rel="stylesheet" href="styles/Components/experience.css">
     <link rel="stylesheet" href="styles/Components/skills.css">
@@ -31,14 +32,20 @@
             </div>
         </header>
     </section>
-    <form>
-        <label for="fName">Full Name:</label>
-        <input type="text" class="contact__form-input">
-        <label for="fName">Company:</label>
-        <input type="text" class="contact__form-input">
-        <label for="fName">Message:</label>
-        <input type="text" class="contact__form-input">
-        <input type="submit">
+    <form class="contact__form">
+        <div class="contact__form-info">
+            <div class="contact__form-name">
+                <label class="contact__form-label" for="name">Full Name:</label>
+                <input class="contact__input-small" type="text" id="name">
+            </div>
+            <div class="contact__form-company">
+                <label class="contact__form-label" for="company">Company:</label>
+                <input class="contact__input-small" type="text" id="company">
+            </div>
+        </div>
+        <label class="contact__form-label" for="message">Message:</label>
+        <textarea class="contact__input-message" type="text" id="message"></textarea>
+        <input class="contact__form-submit btn" type="submit" value="Send Message">
     </form>
 </body>
 </html>

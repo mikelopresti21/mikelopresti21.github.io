@@ -89,6 +89,17 @@ img {
     align-self: center;
 }
 
+.btn {
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: #002A32;
+    border-radius: 100px;
+    border: none;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
 @media (max-width: 1536px) {
 }
 /* xl */
