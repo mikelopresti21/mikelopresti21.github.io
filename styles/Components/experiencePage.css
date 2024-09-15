@@ -5,6 +5,10 @@
     margin-top: 2rem;
 }
 
+#resume-btn-txt {
+    font-size: 1.2rem;
+}
+
 .ti {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -26,16 +30,48 @@
 .ti_projects {
     width: 80%;
     margin-inline: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px, 200px;
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px, 200px; */
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .ti_project {
+    flex: 1;
     display: flex;
     background-color: #004a58;
     border-radius: 10px;
+    min-width: 650px;
+    min-height: 200px;
+
+}
+
+.project-img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#strobe {
+    background-image: url(../../images/white\ strobe.jpg);
+}
+
+#talon {
+    background-image: url(../../images/talon.jpg);
+}
+
+#youtube {
+    background-image: url(../../images/youtube\ screenshot.png);
+}
+
+#training {
+    background-image: url(../../images/training-image.jpg);
 }
 
 .ti_project-img {
@@ -51,7 +87,7 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 2;
     justify-content: space-between;
 }
 

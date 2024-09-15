@@ -32,7 +32,7 @@
         <svg class="download" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
         </svg>   
-        <a href="./files/Mike LoPresti Resume.pdf" download>Download My Resume</a>                 
+        <a id="resume-btn-txt" href="./files/Mike LoPresti Resume.pdf" download>Download My Resume</a>                 
     </button>
     <section class="ti">
         <h1 class="ti_title">Terrestrial Imaging</h1>
@@ -45,7 +45,7 @@
     </section>
     <section class="ti_projects">
         <div class="ti_3d-printing ti_project">
-            <img class="ti_project-img" src="./images/white strobe.jpg" alt="">
+            <div class="project-img" id="strobe"></div>
             <div class="ti_project-content">
                 <div class="ti_project-text-container">
                     <p class="ti_project-title">DroMight Strobe Lights</p>
@@ -59,12 +59,11 @@
                     <a target="_blank" href="https://www.terrestrialimaging.com/search?type=product%2Ccollection&q=strobe">
                         <button class="ti_project-btn">View Product</button>
                     </a>
-                    <button class="ti_project-btn">Download STL File</button>
                 </div>
             </div>
         </div>
         <div class="ti_talon ti_project">
-            <img class="ti_project-img" src="./images/talon.jpg" alt="">
+            <div class="project-img" id="talon"></div>
             <div class="ti_project-content">
                 <div class="ti_project-text-container">
                     <p class="ti_project-title">Talon Drop System</p>
@@ -78,26 +77,40 @@
                     <a target="_blank" href="https://www.terrestrialimaging.com/products/dromight-talon-drop-system-for-dji-matrice-300-series?_pos=1&_sid=271755f71&_ss=r">
                         <button class="ti_project-btn">View Product</button>
                     </a>
-                    <button class="ti_project-btn">Download STL File</button>
                 </div>
             </div>
         </div>
-        <div class="ti_talon ti_project">
-            <img class="ti_project-img" src="./images/photoshop logo.png" alt="">
+        <div class="ti_youtube ti_project">
+            <div class="project-img" id="youtube"></div>
             <div class="ti_project-content">
                 <div class="ti_project-text-container">
-                    <p class="ti_project-title">Photoshop</p>
+                    <p class="ti_project-title">Content Creation</p>
                     <p class="ti_project-description">
-                        DroMight Strobe Ligths to this day are a popular item for drone users that help them comply with FAA regulations
-                        for night flight. I designed the plastic housing with snap fit locks with unique mounting clips for the different drone
-                        models. I created the design using Sketchup and 3D printed them using Cura slicer software and our 3D printers.
+                        I helped build an audience of over 4,000 subscribers on YouTube by creating engaging and educational videos about the 
+                        products and software that we sold.
                     </p>
                 </div>
                 <div class="ti_project-btns">
-                    <a target="_blank" href="https://www.terrestrialimaging.com/search?type=product%2Ccollection&q=strobe">
-                        <button class="ti_project-btn">View Product</button>
+                    <a target="_blank" href="https://www.youtube.com/@TerrestrialImaging">
+                        <button class="ti_project-btn">YouTube Channel</button>
                     </a>
-                    <button class="ti_project-btn">Download STL File</button>
+                </div>
+            </div>
+        </div>
+        <div class="ti_training ti_project">
+            <div class="project-img" id="training"></div>
+            <div class="ti_project-content">
+                <div class="ti_project-text-container">
+                    <p class="ti_project-title">Client Training</p>
+                    <p class="ti_project-description">
+                        I've developed training curriculum and have personally trained hundreds of customers on the use and saftey of their drone 
+                        equipment, and the use of their drone related software.
+                    </p>
+                </div>
+                <div class="ti_project-btns">
+                    <a target="_blank" href="https://www.terrestrialimaging.com/products/equipment-training">
+                        <button class="ti_project-btn">Terrestrial Imaging Training</button>
+                    </a>
                 </div>
             </div>
         </div>
