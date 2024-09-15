@@ -25,6 +25,7 @@ var bite = new Audio("../sounds/apple_bite.mp3")
 // Start Game
 document.addEventListener("keydown", function(event){
     if (event.keyCode == 32 && snake.length < 2){
+        event.preventDefault();
         startGame();
         document.querySelector(".start__message").innerHTML = "Press 'R' to restart";
     }
@@ -71,6 +72,7 @@ function addFood(){
 // Add arrow controls
 document.addEventListener("keydown", function(event){
     if (event.key == "ArrowUp" && direction != "down"){
+        event.preventDefault();
         direction = "up";
         clearInterval(movement);
         movement = setInterval(function(){
@@ -81,6 +83,7 @@ document.addEventListener("keydown", function(event){
 
 document.addEventListener("keydown", function(event){
     if (event.key == "ArrowDown" && direction != "up"){
+        event.preventDefault();
         direction = "down";
         clearInterval(movement);
         movement = setInterval(function(){

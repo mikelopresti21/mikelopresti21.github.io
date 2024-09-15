@@ -120,15 +120,15 @@ h1 {
   @media (max-width: 1024px) {}
 /* md */
   @media (max-width: 768px) {
-   h1{
-        font-size: 2rem;
-   }
+    h1{
+          font-size: 2rem;
+    }
   }
 /* sm */
   @media (max-width: 640px) {}
 /* xs */
   @media (max-width: 425px) {
-    h1{
-        font-size: 1.5rem;
-   }
+      h1{
+          font-size: 1.5rem;
+    }
   }
