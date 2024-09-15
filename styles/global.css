@@ -115,3 +115,20 @@ h1 {
     font-style: italic;
   }
   
+  @media (max-width: 1440px) {}
+/* xl */
+  @media (max-width: 1024px) {}
+/* md */
+  @media (max-width: 768px) {
+   h1{
+        font-size: 2rem;
+   }
+  }
+/* sm */
+  @media (max-width: 640px) {}
+/* xs */
+  @media (max-width: 425px) {
+    h1{
+        font-size: 1.5rem;
+   }
+  }

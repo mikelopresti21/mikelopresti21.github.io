@@ -19,8 +19,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@200;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="./java/contact.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "7quWyFPwYqIAfqf9I",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                let parms = {
+                    name : document.getElementById("name").value,
+                    company : document.getElementById("company").value,
+                    email : document.getElementById("email").value,
+                    message : document.getElementById("message").value,
+                }
+                emailjs.send('contact_service', 'contact_form', parms)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
     <div class="background"></div>
@@ -34,20 +59,27 @@
             </div>
         </header>
     </section>
-    <form class="contact__form">
-        <div class="contact__form-info">
-            <div class="contact__form-name">
-                <label class="contact__form-label" for="name">Full Name:</label>
-                <input class="contact__input-small" type="text" id="name">
+    <section class="form">
+        <h1 class="contact__title">Reach out to me by filling out the form below!</h1>
+        <form id="contact-form">
+            <div class="contact__form-info">
+                <div class="contact__form-name">
+                    <label class="contact__form-label" for="name">Full Name:</label>
+                    <input class="contact__input-small" type="text" id="name">
+                </div>
+                <div class="contact__form-company">
+                    <label class="contact__form-label" for="company">Company:</label>
+                    <input class="contact__input-small" type="text" id="company">
+                </div>
+                <div class="contact__form-email">
+                    <label class="contact__form-label" for="company">Email:</label>
+                    <input class="contact__input-small" type="text" id="email">
+                </div>
             </div>
-            <div class="contact__form-company">
-                <label class="contact__form-label" for="company">Company:</label>
-                <input class="contact__input-small" type="text" id="company">
-            </div>
-        </div>
-        <label class="contact__form-label" for="message">Message:</label>
-        <textarea class="contact__input-message" type="text" id="message"></textarea>
-        <input class="contact__form-submit btn" type="submit" value="Send Message">
-    </form>
+            <label class="contact__form-label" for="message">Message:</label>
+            <textarea class="contact__input-message" type="text" id="message"></textarea>
+            <input class="contact__form-submit btn" type="submit" value="Send Message">
+        </form>
+    </section>
 </body>
 </html>
