@@ -31,8 +31,6 @@
     width: 80%;
     margin-inline: auto;
     display: flex;
-    /* grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px, 200px; */
     gap: 1rem;
     flex-wrap: wrap;
 }
