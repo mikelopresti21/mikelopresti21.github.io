@@ -29,7 +29,6 @@
 .skill__icon {
     display: block;
     height: 50px;
-    /* width: 75px; */
     margin-bottom: 1rem;
     margin-inline: auto;
 }
@@ -51,7 +50,7 @@
 /* md */
 @media (max-width: 768px) {
     .skill__icon{
-        width: 65px;
+        height: 40px;
     }
 }
 /* custom */
@@ -71,9 +70,6 @@
 }
 /* xs */
 @media (max-width: 425px) {
-    .skill__icon{
-        width: 50px;
-    }
 
     .skill__name{
         font-size: 1rem;

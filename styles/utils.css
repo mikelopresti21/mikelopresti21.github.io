@@ -135,6 +135,9 @@ img {
 }
 /* md */
 @media (max-width: 850px) {
+    .download {
+        height: 16px;
+    }
 }
 /* sm */
 @media (max-width: 750px) {

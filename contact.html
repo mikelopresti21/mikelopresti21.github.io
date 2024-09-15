@@ -6,14 +6,10 @@
     <title>Document</title>
 <!-- style sheets -->
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/utils.css">
     <link rel="stylesheet" href="styles/Components/header.css">
     <link rel="stylesheet" href="styles/Components/contact.css">
-    <link rel="stylesheet" href="styles/Components/hero.css">
-    <link rel="stylesheet" href="styles/Components/experience.css">
-    <link rel="stylesheet" href="styles/Components/skills.css">
-    <link rel="stylesheet" href="styles/Components/education.css">
     <link rel="stylesheet" href="styles/Components/footer.css">
-    <link rel="stylesheet" href="styles/utils.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <!-- Roboto Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,6 +36,7 @@
                 emailjs.send('contact_service', 'contact_form', parms)
                     .then(() => {
                         console.log('SUCCESS!');
+                        window.alert("Your message has been sent. Thanks for reaching out!")
                     }, (error) => {
                         console.log('FAILED...', error);
                     });

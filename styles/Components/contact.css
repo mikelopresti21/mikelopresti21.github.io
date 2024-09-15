@@ -3,6 +3,7 @@
     text-align: center;
     margin: 3rem 0;
     font-weight: 300;
+    margin-inline: auto;
 }
 
 .form{
@@ -35,7 +36,6 @@
 .contact__form-submit {
     width: 200px;
     margin-inline: auto;
-    font-size: .8rem;
 }
 
 .contact__form-label {
@@ -62,4 +62,46 @@
 .contact__form-email {
     display: flex;
     flex-direction: column;
+}
+
+/* xl */
+@media (max-width: 1024px) {
+    .contact__title {
+        font-size: 2.5rem;
+    }
+
+    #contact-form {
+        width: 80%;
+    }
+}
+/* md */
+@media (max-width: 850px) {
+    .contact__title {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+}
+/* sm */
+@media (max-width: 700px) {
+    .contact__title {
+        font-size: 1.5rem;
+        margin: 2rem 0;
+        margin-inline: auto;
+    }
+
+    .form{
+        padding-bottom: 5rem;
+    }
+}
+/* xs */
+@media (max-width: 550px) {
+    .contact__title {
+        width: 80%;
+    }
+
+    .contact__form-submit {
+        width: 150px;
+        font-size: 1rem;
+        padding: .25rem .5rem;
+    }
 }

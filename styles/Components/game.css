@@ -27,4 +27,28 @@
     border: 2px solid #fff;
     width: 300px;
     height: 300px;
+} 
+
+@media (max-width: 1350px) {
+    .games__game-img {
+        width: 250px;
+        height: 250px;
+    } 
 }
+/* xl */
+@media (max-width: 1138px) {
+    .games {
+        margin-bottom: 3rem;
+    }
+}
+/* md */
+@media (max-width: 768px) {
+    .games__game-img {
+        width: 200px;
+        height: 200px;
+    } 
+}
+/* sm */
+@media (max-width: 640px) {}
+/* xs */
+@media (max-width: 425px) {}

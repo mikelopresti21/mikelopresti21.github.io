@@ -30,12 +30,13 @@
 }
 
 .ti_projects {
-    width: 80%;
+    width: 90%;
     margin-inline: auto;
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     margin-bottom: 5rem;
+    justify-content: center;
 }
 
 .ti_project {
@@ -43,9 +44,8 @@
     display: flex;
     background-color: #004a58;
     border-radius: 10px;
-    min-width: 650px;
+    min-width: 500px;
     min-height: 200px;
-
 }
 
 .project-img {
@@ -60,11 +60,11 @@
 }
 
 #strobe {
-    background-image: url(../../images/white\ strobe.jpg);
+    background-image: url(../../images/strobe\ resized.jpg);
 }
 
 #talon {
-    background-image: url(../../images/talon.jpg);
+    background-image: url(../../images/talon\ resized.jpg);
 }
 
 #youtube {
@@ -73,14 +73,6 @@
 
 #training {
     background-image: url(../../images/training-image.jpg);
-}
-
-.ti_project-img {
-    height: 250px;
-    width: 250px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    align-self: center;
 }
 
 .ti_project-content {
@@ -102,10 +94,6 @@
     font-size: 1.4rem;
 }
 
-.ti_project-description {
-    
-}
-
 .ti_project-btn {
     font-size: 1rem;
     background-color: #fff;
@@ -119,4 +107,101 @@
 .ti_project-btns {
     display: flex;
     gap: 1rem;
+}
+
+@media (min-width: 1702px) {
+    .ti_project {
+        max-width: 750px;
+    }
+
+}
+
+@media (max-width: 1280px) {
+    .ti_description {
+        font-size: 1.2rem;
+    }
+
+}
+/* xl */
+@media (max-width: 1000px) {
+    /* .ti_description {
+        width: 80%;
+    } */
+}
+
+@media (max-width: 850px) {
+
+    .ti_description {
+        width: 90%;
+    }
+
+    .resume-btn {
+        gap: .5rem;
+    }
+    
+    #resume-btn-txt {
+        font-size: 1rem;
+    }
+}
+/* md */
+@media (max-width: 768px) {
+    .ti_description {
+        font-size: 1rem;
+    }
+}
+/* sm */
+@media (max-width: 650px) {
+    .ti_projects {
+        margin-bottom: 2rem;
+    }
+
+    .ti_project-title {
+        font-size: 1.2rem;
+    }
+
+    .ti_project-btn {
+        font-size: .8rem;
+        padding: .3rem .5rem;
+        cursor: pointer;
+    }
+
+    .ti_project {
+        min-width: 285px;
+        min-height: 0;
+    }
+}
+/* xs */
+@media (max-width: 600px) {
+    .ti_project {
+        flex-direction: column;
+    }
+
+    .project-img {
+        min-height: 200px;
+        border-top-left-radius: 10px;
+        border-top-Right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+}
+
+@media (max-width: 475px) {
+    .resume-btn {
+        gap: .5rem;
+    }
+    
+    #resume-btn-txt {
+        font-size: .8rem;
+    }
+
+    .ti_description {
+        text-align: left;
+    }
+
+    .ti_project-content {
+        padding: 20px;
+    }
+
+    .ti_project-description {
+        text-align: justify;
+    }
 }
