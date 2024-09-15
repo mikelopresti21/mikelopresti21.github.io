@@ -33,6 +33,10 @@
     background-color: green;
 }
 
+.snake-panel {
+    margin-bottom: 2rem;
+}
+
 @keyframes glow {
     0% {
         background-color: rgb(255, 0, 0);

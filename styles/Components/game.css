@@ -3,9 +3,9 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 100vh;
     width: 75%;
     margin-inline: auto;
+    margin-bottom: 8.5rem;
     gap: 2rem;
 }
 

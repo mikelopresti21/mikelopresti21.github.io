@@ -1,0 +1,53 @@
+.footer {
+    background-color: #002A32;
+    padding: 1rem 0;
+}
+
+.footer__container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    width: 50%;
+    justify-content: center;
+    margin-inline: auto;
+}
+
+.footer__box {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;    
+    width: 200px;
+}
+
+.footer__title {
+    color: #fff;
+    font-weight: 400;
+}
+
+.footer__link {
+    color: #fff;
+}
+
+.linkedin-footer {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.github-footer {
+    display: flex;
+    gap: .5rem;
+}
+
+.linkedin-footer-icon {
+    color: #fff;
+    height: 18px;
+    width: 18px;
+}
+
+.github-footer-icon {
+    height: 18px;
+    width: 18px;
+}
+
+
