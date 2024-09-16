@@ -94,7 +94,7 @@ function playSequence(){
     playNext(i);
 }
 
-function start(){
+function startGame(){
     if (clicks++ == -1){
         addToSequence();
         playSequence();
