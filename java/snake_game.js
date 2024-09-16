@@ -113,6 +113,51 @@ document.addEventListener("keydown", function(event){
     }
 });
 
+function btnRight() {
+    if (direction != "left"){
+        direction = "right";
+        clearInterval(movement);
+        movement = setInterval(function(){
+            moveRight();
+        }, speed);
+    }
+}
+
+function btnLeft() {
+    if (direction != "right"){
+        direction = "left";
+        clearInterval(movement);
+        movement = setInterval(function(){
+            moveLeft();
+        }, speed);
+    }
+}
+
+function btnDown() {
+    if (direction != "up"){
+        event.preventDefault();
+        direction = "down";
+        clearInterval(movement);
+        movement = setInterval(function(){
+            moveDown();
+        }, speed);
+    }
+}
+
+function btnUp() {
+    if (direction != "down"){
+        event.preventDefault();
+        direction = "up";
+        clearInterval(movement);
+        movement = setInterval(function(){
+            moveUp();
+        }, speed);
+    }
+}
+
+
+
+
 
 // Snake movement
 function moveUp(){
