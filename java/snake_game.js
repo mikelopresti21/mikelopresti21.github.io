@@ -278,7 +278,7 @@ document.addEventListener("keydown", function(event){
 function reset(){
     score = 0;
     document.querySelector(".score").innerHTML = "Score: " + score;
-    document.querySelector(".start__message").innerHTML = "Press the Space Bar to Start";
+    document.querySelector(".start__message").innerHTML = "Press the Space Bar or Click Here to Start";
     snake = [];
     clearInterval(movement);
     movement = setInterval(moveRight, speed);
