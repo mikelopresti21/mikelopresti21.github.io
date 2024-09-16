@@ -94,6 +94,14 @@ function playSequence(){
     playNext(i);
 }
 
+function start(){
+    if (clicks++ == -1){
+        addToSequence();
+        playSequence();
+        document.querySelector(".start__message").innerHTML = "Press 'R' to restart";
+    }
+}
+
 function playNext(i){
 
         sequence[i].classList.add("pressed");
