@@ -22,6 +22,27 @@
     align-items: center;
 }
 
+.control-btn-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.down-icon {
+    margin-top: .2rem;
+}
+
+.left-icon {
+    margin-right: .2rem;
+}
+
+.right-icon {
+    margin-left: .2rem;
+}
+
+.up-icon {
+    margin-bottom: .2rem;
+}
+
 .snake__map {
     display: grid;
     grid-template-columns: repeat(10, 50px);
@@ -112,9 +133,45 @@
 }
 
 @media (max-width: 550px) {
+    .control-btn-icon {
+        height: 30px;
+        width: 30px;
+    }
 
+    .snake-control-btn {
+        height: 50px;
+        width: 50px;
+    }
+
+    .snake-side-btns {
+        gap: 1rem;
+        align-self: flex-end;
+        margin-bottom: 0;
+    }
+
+    .snake__container {
+        gap: .5rem;
+    }
 }
 
 @media (max-width: 425px) {
+    .control-btn-icon {
+        height: 20px;
+        width: 20px;
+    }
 
+    .snake-control-btn {
+        height: 40px;
+        width: 40px;
+    }
+
+    .snake-side-btns {
+        gap: 1rem;
+        align-self: flex-end;
+        margin-bottom: 0;
+    }
+
+    .snake__container {
+        gap: .5rem;
+    }
 }
